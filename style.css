@@ -1,0 +1,271 @@
+/* Estilos del fondo del navegador */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Familia de fuentes para el texto del cuerpo */
+  color: #4e4e4e; /* Color del texto del cuerpo */
+  font-size: 100%; /* Tamaño base de fuente del cuerpo */
+  background-image: url('fondo-navegador.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contenedor {
+  font-size: 0.90em; /* Tamaño de fuente reducido para el contenedor */
+  justify-content: center; /* Centra los elementos hijos horizontalmente */
+  align-items: center; /* Centra los elementos hijos verticalmente */
+  width: 1000px; /* Ancho del contenedor */
+  margin: auto; /* Centra el contenedor horizontalmente dentro de su padre */
+  height: auto; /* Altura del contenedor se ajusta automáticamente según su contenido */
+}
+
+header {
+  width: 1000px; /* Ancho del encabezado */
+  background-color: #fff; /* Color de fondo del encabezado */
+  background-image: url(desktop-wallpaper-the-blue-butterfly-blue-butterfly.jpg); /* Imagen de fondo del encabezado */
+  background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  background-position: center bottom; /* Posición de la imagen de fondo */
+  background-position-y: -130px; /* Ajusta la posición vertical de la imagen de fondo */
+  position: relative; /* Establece el posicionamiento relativo para alinear correctamente otros elementos */
+  height: 284px; /* Altura del encabezado */
+}
+
+.menu-principal {
+  height: 70px; /* Altura del menú */
+  width: 100%; /* Ancho completo del contenedor */
+  overflow: hidden; /* Ocultar contenido que desborde */
+}
+
+.menu-principal ul {
+  list-style: none; /* Quitar viñetas de la lista */
+  margin: 0; /* Eliminar margen externo */
+  padding: 0; /* Eliminar relleno interno */
+}
+
+.menu-principal ul li {
+  float: left; /* Hacer que los elementos de la lista floten a la izquierda */
+  position: relative; /* Posición relativa para elementos hijos */
+  border-right: 1px solid #ccc; /* Divisor a la derecha */
+}
+
+.menu-principal ul li:last-child {
+  border-right: none; /* Eliminar divisor en el último elemento */
+}
+
+.menu-principal ul li a {
+  display: block; /* Convertir en elemento de bloque para ocupar todo el ancho disponible */
+  font-size: 18px; /* Tamaño de fuente */
+  font-weight: bold; /* Grosor de la fuente */
+  text-decoration: none; /* Quitar decoración de texto */
+  color: #C52900; /* Color del texto */
+  padding: 20px; /* Espaciado interno */
+}
+
+.menu-principal ul li a:hover {
+  color: #258EA3; /* Cambiar color al pasar el cursor */
+}
+
+/* Estilos para la clase 'img' */
+img {
+  position: relative; /* Establece la posición relativa para permitir el posicionamiento */
+  display: block; /* Hace que la imagen se muestre como un bloque */
+  height: 190px; /* Ajusta la altura automáticamente */
+  padding-left: 50px; /* Agrega relleno a la izquierda de la imagen */
+  top: 50%; /* Coloca el borde superior de la imagen en el 50% del contenedor padre */
+  transform: translateY(-50%); /* Centra verticalmente la imagen */
+  left: 0; /* Alinea la imagen a la izquierda */
+  display: inline-block; /* Configura la visualización como inline-block */
+}
+
+/* Estilos para la clase 'img2' */
+.img2 {
+  position: relative; /* Establece la posición relativa para permitir el posicionamiento */
+  display: block; /* Hace que la imagen se muestre como un bloque */
+  height: 190px; /* Ajusta la altura automáticamente */
+  padding-left: 250px; /* Agrega relleno a la izquierda de la imagen */
+  top: 50%; /* Coloca el borde superior de la imagen en el 50% del contenedor padre */
+  transform: translateY(-50%); /* Centra verticalmente la imagen */
+  right: 0; /* Alinea la imagen a la derecha */
+  left: auto; /* Restablece la propiedad 'left' a su valor predeterminado */
+  display: inline-block; /* Configura la visualización como inline-block */
+}
+
+.containere {
+  background-color: #fff; /* Color de fondo del contenedor */
+  width: 1000px; /* Ancho del contenedor */
+  justify-content: center; /* Centra los elementos hijos horizontalmente */
+  align-items: center; /* Centra los elementos hijos verticalmente */
+  margin: 0 auto; /* Centrar el contenedor horizontalmente en su padre */
+  overflow: hidden; /* Controla el desbordamiento del contenido */
+  background-image: url('mariposas-foami3.jpg'); /* Imagen de fondo del contenedor */
+  background-repeat: repeat-y; /* Repetir la imagen de fondo verticalmente */
+  background-size: auto 470px; /* Ajustar el tamaño de la imagen de fondo */
+  height: 0 auto; /* Altura del contenedor */
+  display: flex; /* Establece el contenedor como un contenedor flexible para alinear los elementos hijos */
+}
+
+/* Estilos para el elemento <aside> */
+aside {
+  width: 210px; /* Ancho del aside */
+  margin-right: 39px; /* Margen derecho del aside */
+  text-align: justify; /* Alineación justificada del texto dentro del aside */
+  padding-left: 50px; /* Establecer un espacio de relleno en el lado izquierdo de un elemento */
+}
+
+/* Estilos para el título de las noticias */
+.titulo-noticias {
+  font-size: 30px; /* Tamaño de fuente del título */
+  color: #1d7285; /* Color del texto del título */
+  margin-bottom: 12px; /* Margen inferior del título */
+}
+
+/* Estilos para la fecha de las noticias */
+.fecha-noticia {
+  font-weight: bold; /* Peso de la fuente de la fecha */
+  font-size: medium; /* Tamaño de fuente de la fecha */
+  color: #4e4e4e; /* Color del texto de la fecha */
+  text-decoration: none; /* Elimina la decoración predeterminada del texto de la fecha */
+}
+
+/* Estilos para la fecha de las noticias cuando se pasa el mouse sobre ella */
+.fecha-noticia:hover {
+  text-decoration: underline; /* Agrega subrayado al pasar el mouse sobre la fecha */
+}
+
+/* Estilos para la lista de noticias */
+.lista-noticias {
+  list-style: none; /* Elimina los marcadores de la lista */
+  padding: 0; /* Elimina el relleno predeterminado de la lista */
+}
+
+/* Estilos para cada elemento de la lista de noticias */
+.lista-noticias li {
+  margin-bottom: 20px; /* Espacio entre cada noticia en la lista */
+}
+
+/* Define el ancho del contenedor principal */
+main {
+  width: 671px;
+  margin-top: auto; /* Centra verticalmente */
+  margin-left: 50px; /* Ajusta según el espacio deseado */
+}
+
+/* Estilo para el primer artículo */
+#article1 {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  text-align: justify; /* Alinea el texto justificado */
+}
+
+/* Estilo para los títulos de los artículos */
+#article1 h2 {
+  margin-bottom: 26px; /* Margen inferior */
+  color: #e67d45; /* Color del texto */
+  font-size: 30px; /* Tamaño de fuente */
+  display: block; /* Muestra como bloque */
+  border-bottom: 1px solid #ccc; /* Línea inferior */
+  text-align: center; /* Alinea el texto al centro */
+}
+
+/* Estilo para el segundo artículo */
+#article2 {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  text-align: justify; /* Alinea el texto justificado */
+}
+
+/* Estilo para los títulos del segundo artículo */
+#article2 h2 {
+  margin-bottom: 26px; /* Margen inferior */
+  color: #7FC4CE; /* Color del texto */
+  font-size: 30px; /* Tamaño de fuente */
+  display: block; /* Muestra como bloque */
+  border-bottom: 1px solid #ccc; /* Línea inferior */
+  text-align: center; /* Alinea el texto al centro */
+}
+
+/* Estilos generales para la lista de artículos */
+.lista-articulos {
+  list-style: none; /* Quita la viñeta predeterminada de la lista */
+}
+
+/* Estilos para cada elemento de la lista de artículos */
+.lista-articulos li {
+  color: #4e4e4e; /* Color del texto */
+  font-weight: bold; /* Negrita para el texto */
+  list-style-type: none; /* Quita el estilo de viñeta predeterminado */
+  padding-left: 30px; /* Ajusta el espacio entre la imagen y el texto */
+  margin-top: -40px; /* Ajusta el margen superior para alinear con elementos adyacentes */
+}
+
+/* Estilos para el párrafo dentro de cada elemento de la lista de artículos */
+.lista-articulos p {
+  text-align: justify; /* Justifica el texto dentro del párrafo */
+  margin-top: -41px; /* Ajusta el margen superior para alinear con elementos adyacentes */
+  padding-left: 100px; /* Ajusta el espacio entre la imagen y el texto */
+}
+
+.lista-articulos .li1:before {
+  content: ""; /* Crea un contenido vacío antes del elemento li4 */
+  display: inline-block; /* Hace que el elemento sea un bloque en línea */
+  width: 60px; /* Establece el ancho del elemento en 60 píxeles */
+  height: 60px; /* Establece la altura del elemento en 60 píxeles */
+  background-image: url('huevo-mariposa.jpg'); /* Establece la imagen de fondo */
+  background-size: cover; /* Escala la imagen de fondo para cubrir todo el área */
+  margin-right: 10px; /* Establece el margen derecho en 10 píxeles */
+  margin-top: 41px; /* Establece el margen superior en 41 píxeles */
+  vertical-align: middle; /* Alinea verticalmente el elemento */
+}
+
+.lista-articulos .li2:before {
+  content: ""; /* Crea un contenido vacío antes del elemento li4 */
+  display: inline-block; /* Hace que el elemento sea un bloque en línea */
+  width: 60px; /* Establece el ancho del elemento en 60 píxeles */
+  height: 60px; /* Establece la altura del elemento en 60 píxeles */
+  background-image: url('larva-oruga-morpho.jpg');/* Establece la imagen de fondo */
+  background-size: cover; /* Escala la imagen de fondo para cubrir todo el área */
+  margin-right: 10px; /* Establece el margen derecho en 10 píxeles */
+  margin-top: 41px; /* Establece el margen superior en 41 píxeles */
+  vertical-align: middle; /* Alinea verticalmente el elemento */
+}
+
+.lista-articulos .li3:before {
+  content: ""; /* Crea un contenido vacío antes del elemento li4 */
+  display: inline-block; /* Hace que el elemento sea un bloque en línea */
+  width: 60px; /* Establece el ancho del elemento en 60 píxeles */
+  height: 60px; /* Establece la altura del elemento en 60 píxeles */
+  background-image: url('pupa-morpho.jpg'); /* Establece la imagen de fondo */
+  background-size: cover; /* Escala la imagen de fondo para cubrir todo el área */
+  margin-right: 10px; /* Establece el margen derecho en 10 píxeles */
+  margin-top: 41px; /* Establece el margen superior en 41 píxeles */
+  vertical-align: middle; /* Alinea verticalmente el elemento */
+}
+
+.lista-articulos .li4:before {
+  content: ""; /* Crea un contenido vacío antes del elemento li4 */
+  display: inline-block; /* Hace que el elemento sea un bloque en línea */
+  width: 60px; /* Establece el ancho del elemento en 60 píxeles */
+  height: 60px; /* Establece la altura del elemento en 60 píxeles */
+  background-image: url('mariposa\ logo.jpg'); /* Establece la imagen de fondo */
+  background-size: cover; /* Escala la imagen de fondo para cubrir todo el área */
+  margin-right: 10px; /* Establece el margen derecho en 10 píxeles */
+  margin-top: 41px; /* Establece el margen superior en 41 píxeles */
+  vertical-align: middle; /* Alinea verticalmente el elemento */
+}
+
+/* Estilos cuando el mouse pasa por encima de un elemento de la lista */
+.lista-articulos li:hover {
+  text-decoration: underline; /* Subraya el texto cuando el mouse pasa por encima */
+}
+
+footer {
+  height: 89px; /* Altura del footer */
+  width: 1000px; /* Ancho del footer */
+  background-color: blue; /* Color de fondo del footer */
+  color: #fff; /* Color del texto dentro del footer */
+  text-align: center; /* Centrar el contenido del footer */
+  margin: 0 auto;
+  padding-top: 35px;
+}
+
+footer p {
+  display: inline; /* Hacer que los párrafos estén en línea */
+  margin: 70px; /* Agregar un margen entre los párrafos */
+}
