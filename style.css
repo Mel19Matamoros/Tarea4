@@ -42,13 +42,13 @@ header {
 }
 
 .menu-principal ul li {
-  float: left; /* Hacer que los elementos de la lista floten a la izquierda */
+  float: right; /* Hacer que los elementos de la lista floten a la derecha */
   position: relative; /* Posición relativa para elementos hijos */
-  border-right: 1px solid #ccc; /* Divisor a la derecha */
+  border-right: 3px solid #ccc; /* Divisor a la derecha */
 }
 
-.menu-principal ul li:last-child {
-  border-right: none; /* Eliminar divisor en el último elemento */
+.menu-principal ul li:first-child {
+  border-right: none; /* Eliminar divisor en el primer elemento */
 }
 
 .menu-principal ul li a {
@@ -62,6 +62,7 @@ header {
 
 .menu-principal ul li a:hover {
   color: #258EA3; /* Cambiar color al pasar el cursor */
+  border-bottom: 1px solid #258EA3; /* Agregar borde inferior sólido */
 }
 
 /* Estilos para la clase 'img' */
@@ -70,7 +71,7 @@ img {
   display: block; /* Hace que la imagen se muestre como un bloque */
   height: 190px; /* Ajusta la altura automáticamente */
   padding-left: 50px; /* Agrega relleno a la izquierda de la imagen */
-  top: 50%; /* Coloca el borde superior de la imagen en el 50% del contenedor padre */
+  top: 36%; /* Coloca el borde superior de la imagen en el 36% del contenedor padre */
   transform: translateY(-50%); /* Centra verticalmente la imagen */
   left: 0; /* Alinea la imagen a la izquierda */
   display: inline-block; /* Configura la visualización como inline-block */
@@ -82,7 +83,7 @@ img {
   display: block; /* Hace que la imagen se muestre como un bloque */
   height: 190px; /* Ajusta la altura automáticamente */
   padding-left: 250px; /* Agrega relleno a la izquierda de la imagen */
-  top: 50%; /* Coloca el borde superior de la imagen en el 50% del contenedor padre */
+  top: 46%; /* Coloca el borde superior de la imagen en el 46% del contenedor padre */
   transform: translateY(-50%); /* Centra verticalmente la imagen */
   right: 0; /* Alinea la imagen a la derecha */
   left: auto; /* Restablece la propiedad 'left' a su valor predeterminado */
@@ -258,7 +259,7 @@ main {
 footer {
   height: 89px; /* Altura del footer */
   width: 1000px; /* Ancho del footer */
-  background-color: blue; /* Color de fondo del footer */
+  background-color: darkblue; /* Color de fondo del footer */
   color: #fff; /* Color del texto dentro del footer */
   text-align: center; /* Centrar el contenido del footer */
   margin: 0 auto;
@@ -268,4 +269,19 @@ footer {
 footer p {
   display: inline; /* Hacer que los párrafos estén en línea */
   margin: 70px; /* Agregar un margen entre los párrafos */
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-principal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img2 {
+    display: none; /* O cualquier otro ajuste necesario */
+  }
+
+  .lista-articulos li {
+    margin-bottom: 20px;
+  }
 }
