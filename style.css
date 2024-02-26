@@ -196,6 +196,7 @@ main {
 /* Estilos generales para la lista de artículos */
 .lista-articulos {
   list-style: none; /* Quita la viñeta predeterminada de la lista */
+  padding-left: 1px;
 }
 
 /* Estilos para cada elemento de la lista de artículos */
