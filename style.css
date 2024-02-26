@@ -8,6 +8,16 @@ body {
   background-size: cover;
 }
 
+.fondo-principa {
+  background-color: rgba(255, 255, 255, 0.5); /* Cambia el último valor (0.5) para ajustar la transparencia */
+  margin-left: 80px;
+  margin-right: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .contenedor {
   font-size: 0.90em; /* Tamaño de fuente reducido para el contenedor */
   justify-content: center; /* Centra los elementos hijos horizontalmente */
@@ -15,6 +25,7 @@ body {
   width: 1000px; /* Ancho del contenedor */
   margin: auto; /* Centra el contenedor horizontalmente dentro de su padre */
   height: auto; /* Altura del contenedor se ajusta automáticamente según su contenido */
+  margin-top: 60px;
 }
 
 header {
@@ -264,6 +275,7 @@ footer {
   text-align: center; /* Centrar el contenido del footer */
   margin: 0 auto;
   padding-top: 35px;
+  margin-bottom: 60px;
 }
 
 footer p {
